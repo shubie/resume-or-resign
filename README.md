@@ -1,7 +1,12 @@
 # ResumeOrResign
 
-**TODO: Add description**
-Ensure you have Elixir installed
+A simple application to demonstrate Elixir and Erlang/OTP Fault tolerant and Concurrency features. GDG North Central Presentation on - LET IT CRASH Techniques for Building Highly Available Systems
+
+
+
+**Ensure you have Elixir installed**
+
+
 ## Installation
 ```
 $ git clone https://github.com/shubie/resume-or-resign
