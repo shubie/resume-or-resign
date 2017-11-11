@@ -1,6 +1,6 @@
 # ResumeOrResign
 
-A simple application to demonstrate Elixir and Erlang/OTP Fault tolerant and Concurrency features. GDG North Central Presentation on - LET IT CRASH Techniques for Building Highly Available Systems
+A simple application to demonstrate Elixir and Erlang/OTP Fault tolerance and Concurrency features. GDG North Central Presentation on - LET IT CRASH Techniques for Building Highly Available Systems
 
 
 
@@ -13,6 +13,27 @@ $ git clone https://github.com/shubie/resume-or-resign
 $ cd resume-or-resign
 $ mix do deps.get
 $ iex -S mix 
+
+```
+
+You can play around
+
+```
+
+$ {:ok, pid} = ResumeOrResign.Protest.start_link
+
+$ ResumeOrResign.Protest.i_wan_protest(pid, "Charley Boy")
+$ ResumeOrResign.Protest.i_wan_protest(pid, "Tuface Idibia")
+$ ResumeOrResign.Protest.i_wan_protest(pid, "Dele Ayenugba")
+$ ResumeOrResign.Protest.i_wan_protest(pid, "Jim Iyke")
+$ ResumeOrResign.Protest.who_buhari_don_epp(pid, "Aisha Yesufu")
+$ ResumeOrResign.Protest.who_buhari_don_epp(pid, "Ansari Dokumbo")
+
+$ ResumeOrResign.Protest.troublemakers(pid)
+
+$ ResumeOrResign.Protest.who_protest_epp(pid, "Tuface Idibia")
+
+$ ResumeOrResign.Protest.troublemakers(pid)
 
 ```
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
