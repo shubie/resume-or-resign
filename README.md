@@ -1,9 +1,15 @@
 # ResumeOrResign
 
 **TODO: Add description**
-
+Ensure you have Elixir installed
 ## Installation
+```
+$ git clone https://github.com/shubie/resume-or-resign
+$ cd resume-or-resign
+$ mix do deps.get
+$ iex -S mix 
 
+```
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
 by adding `resume_or_resign` to your list of dependencies in `mix.exs`:
 
