@@ -1,10 +1,10 @@
 # ResumeOrResign
 
-A simple application to demonstrate Elixir and Erlang/OTP Fault tolerance and Concurrency features. GDG North Central Presentation on - LET IT CRASH Techniques for Building Highly Available Systems
+A simple application to demonstrate Elixir and Erlang/OTP Fault tolerance and Concurrency features. GDG North Central Presentation on  LET IT CRASH - Techniques for Building Highly Available Systems
 
 
 
-**Ensure you have Elixir installed**
+**Ensure you have Elixir installed https://elixir-lang.org/install.html **
 
 
 ## Installation
