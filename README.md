@@ -17,7 +17,20 @@ $ iex -S mix
 ```
 
 You can play around
+You can play around
 
+```
+
+$ {:ok, pid} = ResumeOrResign.Protest.start_link
+
+$ spawn(ResumeOrResign.Resume,:goes_to_london, [["Buhari"]] )
+
+$ buhari = spawn(ResumeOrResign.Resume, :protest, []) 
+$ charley = spawn(ResumeOrResign.Resume, :protest, []) 
+$ send(buhari, {:resume,charley})
+
+```
+GENSERVER EXAMPLES
 ```
 
 $ {:ok, pid} = ResumeOrResign.Protest.start_link

@@ -1,6 +1,6 @@
 defmodule ResumeOrResign.Resume do
 
-  def collect do
+  def protest do
       receive do
           {:resume , from} ->
               IO.puts "I am sick and receiving treatment ---->"
@@ -22,7 +22,7 @@ defmodule ResumeOrResign.Resume do
               IO.puts "<---- hu! I didn't see any slap"
 
       end
-      collect()
+      protest()
   end
 
   def goes_to_london(list) do
@@ -31,3 +31,10 @@ defmodule ResumeOrResign.Resume do
   end
 
 end
+
+
+# spawn(ResumeOrResign.Resume,:goes_to_london, [["Buhari","Fayose"]] )
+
+# buhari = spawn(ResumeOrResign.Resume, :protest, []) 
+# charley = spawn(ResumeOrResign.Resume, :protest, []) 
+# send(buhari, {:resume,charley})
