@@ -17,11 +17,8 @@ $ iex -S mix
 ```
 
 You can play around
-You can play around
 
 ```
-
-$ {:ok, pid} = ResumeOrResign.Protest.start_link
 
 $ spawn(ResumeOrResign.Resume,:goes_to_london, [["Buhari"]] )
 
@@ -30,6 +27,7 @@ $ charley = spawn(ResumeOrResign.Resume, :protest, [])
 $ send(buhari, {:resume,charley})
 
 ```
+
 GENSERVER EXAMPLES
 ```
 
@@ -47,6 +45,15 @@ $ ResumeOrResign.Protest.troublemakers(pid)
 $ ResumeOrResign.Protest.who_protest_epp(pid, "Tuface Idibia")
 
 $ ResumeOrResign.Protest.troublemakers(pid)
+
+```
+Parallel Map
+ 
+```
+
+$ alias ResumeOrResign.Parallel, as: MyMap
+
+$ ResumeOrResign.Parallel.pmap 1..1000, &(&1 * &1) 
 
 ```
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
