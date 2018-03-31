@@ -47,13 +47,15 @@ $ ResumeOrResign.Protest.who_protest_epp(pid, "Tuface Idibia")
 $ ResumeOrResign.Protest.troublemakers(pid)
 
 ```
-Parallel Map example
+Parallel map example
  
 ```
 
+$ ResumeOrResign.Parallel.pmap 1..1000, &(&1 * &1) 
+
 $ alias ResumeOrResign.Parallel, as: MyMap
 
-$ ResumeOrResign.Parallel.pmap 1..1000, &(&1 * &1) 
+$ MyMap.Parallel.pmap 1..1000, &(&1 * &1) 
 
 ```
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
