@@ -47,7 +47,7 @@ $ ResumeOrResign.Protest.who_protest_epp(pid, "Tuface Idibia")
 $ ResumeOrResign.Protest.troublemakers(pid)
 
 ```
-Parallel Map
+Parallel Map example
  
 ```
 
